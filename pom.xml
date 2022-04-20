@@ -38,6 +38,7 @@
 
   <modules>
     <module>mingyue-springboot-base</module>
+    <module>mingyue-springboot-base-lombok</module>
   </modules>
 
   <build>
