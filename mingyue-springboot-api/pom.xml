@@ -10,10 +10,10 @@
   </parent>
 
   <groupId>com.csp</groupId>
-  <artifactId>mingyue-springboot-base</artifactId>
+  <artifactId>mingyue-springboot-api</artifactId>
   <version>1.0</version>
-  <name>mingyue-springboot-base</name>
-  <description>mingyue-springboot-base</description>
+  <name>mingyue-springboot-api</name>
+  <description>mingyue-springboot-api</description>
   <properties>
     <java.version>1.8</java.version>
   </properties>
@@ -30,6 +30,11 @@
     </dependency>
 
     <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -41,6 +46,14 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+            </exclude>
+          </excludes>
+        </configuration>
       </plugin>
     </plugins>
   </build>

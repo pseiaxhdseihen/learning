@@ -11,7 +11,7 @@
 
   <groupId>com.csp</groupId>
   <artifactId>mingyue-springboot-base-lombok</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>mingyue-springboot-base-lombok</name>
   <description>mingyue-springboot-base-lombok</description>
   <properties>

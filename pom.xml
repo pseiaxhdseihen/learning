@@ -22,7 +22,7 @@
   <groupId>com.csp</groupId>
   <artifactId>mingyue-springboot-learning</artifactId>
   <name>${project.artifactId}</name>
-  <version>1.0.0</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -39,6 +39,7 @@
   <modules>
     <module>mingyue-springboot-base</module>
     <module>mingyue-springboot-base-lombok</module>
+	<module>mingyue-springboot-api</module>
   </modules>
 
   <build>
