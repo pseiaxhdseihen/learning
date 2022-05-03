@@ -40,7 +40,7 @@
     <module>mingyue-springboot-base</module>
     <module>mingyue-springboot-base-lombok</module>
     <module>mingyue-springboot-api</module>
-    <module>mingyue-springboot-swagger</module>
+    <module>mingyue-springboot-swagger2</module>
   </modules>
 
   <build>
