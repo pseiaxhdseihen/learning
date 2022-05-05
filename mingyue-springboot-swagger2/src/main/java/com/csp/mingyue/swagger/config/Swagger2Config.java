@@ -26,7 +26,7 @@ public class Swagger2Config {
     return new Docket(DocumentationType.SWAGGER_2)
         .apiInfo(apiInfo())
         .enable(true)
-        .groupName("v1")
+        .groupName("v2")
         .select()
         // 过滤路径
         .paths(PathSelectors.any())
@@ -42,8 +42,8 @@ public class Swagger2Config {
             "Strive", "https://gitee.com/csps/mingyue-springboot-learning", "732171109@qq.com");
     return new ApiInfo(
         "Swagger 测试接口文档",
-        "【接口篇】SpringBoot 快速实践 RESTful API 架构风格",
-        "v1.0",
+        "【接口篇】SpringBoot 整合 Swagger2 实现在线 API 文档",
+        "v2.0",
         "https://gitee.com/csps/mingyue-springboot-learning",
         contact,
         "Apache 2.0",
