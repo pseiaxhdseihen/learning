@@ -1,5 +1,6 @@
 package com.csp.mingyue.swagger3.controller;
 
+import cn.hutool.core.util.StrUtil;
 import com.csp.mingyue.swagger3.model.MingYueUser;
 import com.csp.mingyue.swagger3.service.MingYueUserService;
 import io.swagger.annotations.Api;
@@ -32,7 +33,15 @@ public class MingYueUserController {
 
   @ApiOperation("添加用户")
   @PostMapping
-  public ResponseEntity<Long> addUser(@RequestBody MingYueUser user) {
+  public ResponseEntity<Long> addUser(@RequestBody MingYueUser user) throws Exception {
+    if (null == user.getUserId()) {
+      throw new Exception("userId 不能为空！");
+    }
+
+    if (StrUtil.isBlank(user.getUsername())) {
+      throw new Exception("username 不能为空！");
+    }
+
     return ResponseEntity.ok(mingYueUserService.addUser(user));
   }
 
