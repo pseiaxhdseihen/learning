@@ -42,6 +42,7 @@
     <module>mingyue-springboot-api</module>
     <module>mingyue-springboot-swagger2</module>
 	<module>mingyue-springboot-swagger3</module>
+	<module>mingyue-springboot-validator</module>
   </modules>
 
   <build>
