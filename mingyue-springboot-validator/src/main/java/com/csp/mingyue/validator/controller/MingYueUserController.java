@@ -6,6 +6,7 @@ import com.csp.mingyue.validator.service.MingYueUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,13 +34,13 @@ public class MingYueUserController {
 
   @ApiOperation("添加用户")
   @PostMapping
-  public ResponseEntity<Long> addUser(@RequestBody MingYueUser user) throws Exception {
+  public ResponseEntity<Long> addUser(@RequestBody MingYueUser user) {
     if (null == user.getUserId()) {
-      throw new Exception("userId 不能为空！");
+      return new ResponseEntity("userId 不能为空！", HttpStatus.BAD_REQUEST);
     }
 
     if (StrUtil.isBlank(user.getUsername())) {
-      throw new Exception("username 不能为空！");
+      return new ResponseEntity("username 不能为空！", HttpStatus.BAD_REQUEST);
     }
 
     return ResponseEntity.ok(mingYueUserService.addUser(user));
