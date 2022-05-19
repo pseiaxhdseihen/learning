@@ -1,13 +1,15 @@
 package com.csp.mingyue.validator.controller;
 
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
 import com.csp.mingyue.validator.model.MingYueUser;
 import com.csp.mingyue.validator.service.MingYueUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /** @author Strive */
 @Api(tags = "用户模块")
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/user")
@@ -34,16 +37,13 @@ public class MingYueUserController {
 
   @ApiOperation("添加用户")
   @PostMapping
-  public ResponseEntity<Long> addUser(@RequestBody MingYueUser user) {
-    if (null == user.getUserId()) {
-      return new ResponseEntity("userId 不能为空！", HttpStatus.BAD_REQUEST);
+  public ResponseEntity<String> addUser(
+      @RequestBody @Validated MingYueUser user, BindingResult bindingResult) {
+    if (bindingResult.hasErrors()) {
+      return ResponseEntity.ok(JSONUtil.toJsonStr(bindingResult.getFieldErrors()));
     }
 
-    if (StrUtil.isBlank(user.getUsername())) {
-      return new ResponseEntity("username 不能为空！", HttpStatus.BAD_REQUEST);
-    }
-
-    return ResponseEntity.ok(mingYueUserService.addUser(user));
+    return ResponseEntity.ok(mingYueUserService.addUser(user).toString());
   }
 
   @ApiOperation("更新用户")
