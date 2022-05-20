@@ -43,6 +43,7 @@
     <module>mingyue-springboot-swagger2</module>
 	<module>mingyue-springboot-swagger3</module>
 	<module>mingyue-springboot-validator</module>
+	<module>mingyue-springboot-filter-interceptor</module>
   </modules>
 
   <build>
