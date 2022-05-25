@@ -20,6 +20,7 @@ public class MingYueIpWordFilter implements Filter {
   @Override
   public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)
       throws IOException, ServletException {
+    log.info("过滤前");
     /*
      * 0:0:0:0:0:0:0:1 是 ipv6 的表现形式，对应 ipv4 来说相当于 127.0.0.1，也就是本机
      * 禁止使用 127.0.0.1 / localhost 访问
@@ -32,5 +33,6 @@ public class MingYueIpWordFilter implements Filter {
     } else {
       filterChain.doFilter(request, response);
     }
+    log.info("过滤后");
   }
 }
