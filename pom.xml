@@ -44,6 +44,7 @@
     <module>mingyue-springboot-swagger3</module>
     <module>mingyue-springboot-validator</module>
     <module>mingyue-springboot-filter-interceptor</module>
+	<module>mingyue-springboot-task</module>
   </modules>
 
   <build>
