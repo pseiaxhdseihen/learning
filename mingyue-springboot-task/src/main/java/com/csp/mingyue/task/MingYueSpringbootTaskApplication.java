@@ -3,6 +3,7 @@ package com.csp.mingyue.task;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/** @author csp73 */
 @SpringBootApplication
 public class MingYueSpringbootTaskApplication {
 
