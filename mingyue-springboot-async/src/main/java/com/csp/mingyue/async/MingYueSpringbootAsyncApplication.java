@@ -2,10 +2,10 @@ package com.csp.mingyue.async;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /** @author Strive */
-@EnableScheduling
+@EnableAsync // 开启异步任务
 @SpringBootApplication
 public class MingYueSpringbootAsyncApplication {
 
