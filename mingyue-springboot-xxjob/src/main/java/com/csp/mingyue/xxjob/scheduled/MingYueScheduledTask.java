@@ -1,5 +1,7 @@
 package com.csp.mingyue.xxjob.scheduled;
 
+import com.xxl.job.core.biz.model.ReturnT;
+import com.xxl.job.core.handler.annotation.XxlJob;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -13,14 +15,10 @@ import org.springframework.stereotype.Component;
 public class MingYueScheduledTask {
 
   /** 每1分钟扫描一次，扫描发送失败的短信，再次发送 */
-  private void sendErrorMsg() {
+  @XxlJob("sendErrorMsg")
+  public ReturnT<String> sendErrorMsg(String param) {
     log.info("发送失败的短信，再次发送");
-  }
 
-  /** 模拟阻塞任务 */
-  private void sendErrorMsg2() throws InterruptedException {
-    // 阻塞2分钟
-    Thread.sleep(60 * 1000 * 2);
-    log.info("222 发送失败的短信，再次发送  222");
+    return ReturnT.SUCCESS;
   }
 }
