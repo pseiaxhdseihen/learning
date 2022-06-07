@@ -16,7 +16,7 @@ public class MingYueScheduledTask {
 
   /** 每1分钟扫描一次，扫描发送失败的短信，再次发送 */
   @XxlJob("sendErrorMsg")
-  public ReturnT<String> sendErrorMsg(String param) {
+  public ReturnT<String> sendErrorMsg() {
     log.info("发送失败的短信，再次发送");
 
     return ReturnT.SUCCESS;
