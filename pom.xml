@@ -47,6 +47,7 @@
 	<module>mingyue-springboot-task</module>
 	<module>mingyue-springboot-async</module>
 	<module>mingyue-springboot-xxjob</module>
+	<module>mingyue-springboot-mysql</module>
   </modules>
 
   <build>
