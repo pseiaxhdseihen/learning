@@ -57,3 +57,6 @@ target/
 Thumbs.db
 Servers
 .metadata
+
+### 限制 application-mingyue.yml 文件提交
+*mingyue.yml
