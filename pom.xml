@@ -44,10 +44,11 @@
     <module>mingyue-springboot-swagger3</module>
     <module>mingyue-springboot-validator</module>
     <module>mingyue-springboot-filter-interceptor</module>
-	<module>mingyue-springboot-task</module>
-	<module>mingyue-springboot-async</module>
-	<module>mingyue-springboot-xxjob</module>
-	<module>mingyue-springboot-mysql</module>
+    <module>mingyue-springboot-task</module>
+    <module>mingyue-springboot-async</module>
+    <module>mingyue-springboot-xxjob</module>
+    <module>mingyue-springboot-mysql</module>
+    <module>mingyue-springboot-mybatis</module>
   </modules>
 
   <build>
