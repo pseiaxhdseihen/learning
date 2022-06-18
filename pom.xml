@@ -49,6 +49,7 @@
     <module>mingyue-springboot-xxjob</module>
     <module>mingyue-springboot-mysql</module>
     <module>mingyue-springboot-mybatis</module>
+	<module>mingyue-springboot-mybatis-plus</module>
   </modules>
 
   <build>
