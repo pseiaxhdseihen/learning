@@ -1,5 +1,6 @@
 package com.csp.mingyue.mybatisPlus.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.csp.mingyue.mybatisPlus.model.MingYueUser;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -9,13 +10,4 @@ import org.apache.ibatis.annotations.Mapper;
  * @description
  */
 @Mapper
-public interface SysUserMapper {
-
-  /**
-   * 根据用户ID查询用户信息
-   *
-   * @param userId 用户ID
-   * @return 用户信息
-   */
-  MingYueUser queryUserById(Long userId);
-}
+public interface SysUserMapper extends BaseMapper<MingYueUser> {}

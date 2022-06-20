@@ -19,6 +19,6 @@ public class MingYueUserService {
    * @return 用户信息
    */
   public MingYueUser queryUserById(Long userId) {
-    return sysUserMapper.queryUserById(userId);
+    return sysUserMapper.selectById(userId);
   }
 }

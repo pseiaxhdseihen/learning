@@ -49,17 +49,17 @@
       <optional>true</optional>
     </dependency>
 
-    <!--  mybatis  -->
-    <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <!--  Mysql数据库驱动  -->
+    <!--  Mysql 数据库驱动  -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <scope>runtime</scope>
+    </dependency>
+    <!--  mybatis-plus  -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.5.1</version>
     </dependency>
 
     <dependency>
