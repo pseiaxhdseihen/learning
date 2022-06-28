@@ -35,7 +35,7 @@ public class Swagger3Config {
   private ApiInfo apiInfo() {
     return new ApiInfoBuilder()
         .title("Swagger 测试接口文档")
-        .description("【数据篇】SpringBoot 整合 MyBatis-Plus 增强 MyBatis ，基友搭配，效率翻倍")
+        .description("【缓存篇】Spring Boot 整合 Redis 缓存数据")
         .contact(
             new Contact(
                 "Strive", "https://gitee.com/csps/mingyue-springboot-learning", "732171109@qq.com"))
