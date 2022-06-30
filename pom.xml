@@ -51,6 +51,7 @@
     <module>mingyue-springboot-mybatis</module>
 	<module>mingyue-springboot-mybatis-plus</module>
 	<module>mingyue-springboot-redis</module>
+	<module>mingyue-springboot-cache</module>
   </modules>
 
   <build>
