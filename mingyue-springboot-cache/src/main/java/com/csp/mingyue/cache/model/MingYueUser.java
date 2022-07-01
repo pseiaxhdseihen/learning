@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +19,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ApiModel(value = "用户实体类", description = "用户信息描述类")
 @TableName("sys_user")
-public class MingYueUser {
+public class MingYueUser implements Serializable {
 
   @TableId
   @ApiModelProperty(value = "用户id")
