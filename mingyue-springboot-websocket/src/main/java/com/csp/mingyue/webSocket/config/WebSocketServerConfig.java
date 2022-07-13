@@ -1,6 +1,7 @@
 package com.csp.mingyue.webSocket.config;
 
 import com.csp.mingyue.webSocket.handler.MingYueTextWebSocketHandler;
+import com.csp.mingyue.webSocket.interceptor.MingYueSocketInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
@@ -18,8 +19,13 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class WebSocketServerConfig implements WebSocketConfigurer {
   private final MingYueTextWebSocketHandler mingYueTextWebSocketHandler;
 
+  private final MingYueSocketInterceptor mingYueSocketInterceptor;
+
   @Override
   public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-    registry.addHandler(mingYueTextWebSocketHandler, "/connect").withSockJS();
+    registry
+        .addHandler(mingYueTextWebSocketHandler, "/connect")
+        .addInterceptors(mingYueSocketInterceptor)
+        .withSockJS();
   }
 }
