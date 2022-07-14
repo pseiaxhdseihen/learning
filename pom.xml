@@ -54,6 +54,7 @@
 	<module>mingyue-springboot-cache</module>
 	<module>mingyue-springboot-webflux</module>
 	<module>mingyue-springboot-websocket</module>
+	<module>mingyue-springboot-admin</module>
   </modules>
 
   <build>
