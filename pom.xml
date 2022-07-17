@@ -55,6 +55,7 @@
 	<module>mingyue-springboot-webflux</module>
 	<module>mingyue-springboot-websocket</module>
 	<module>mingyue-springboot-admin</module>
+	<module>mingyue-springboot-admin-client</module>
   </modules>
 
   <build>
