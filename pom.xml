@@ -56,6 +56,7 @@
 	<module>mingyue-springboot-websocket</module>
 	<module>mingyue-springboot-admin</module>
 	<module>mingyue-springboot-admin-client</module>
+	<module>mingyue-springboot-sentinel</module>
   </modules>
 
   <build>
