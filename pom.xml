@@ -49,14 +49,13 @@
     <module>mingyue-springboot-xxjob</module>
     <module>mingyue-springboot-mysql</module>
     <module>mingyue-springboot-mybatis</module>
-	<module>mingyue-springboot-mybatis-plus</module>
-	<module>mingyue-springboot-redis</module>
-	<module>mingyue-springboot-cache</module>
-	<module>mingyue-springboot-webflux</module>
-	<module>mingyue-springboot-websocket</module>
-	<module>mingyue-springboot-admin</module>
-	<module>mingyue-springboot-admin-client</module>
-	<module>mingyue-springboot-sentinel</module>
+    <module>mingyue-springboot-mybatis-plus</module>
+    <module>mingyue-springboot-redis</module>
+    <module>mingyue-springboot-cache</module>
+    <module>mingyue-springboot-webflux</module>
+    <module>mingyue-springboot-websocket</module>
+    <module>mingyue-springboot-admin</module>
+    <module>mingyue-springboot-admin-client</module>
   </modules>
 
   <build>
