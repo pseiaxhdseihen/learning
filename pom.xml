@@ -57,6 +57,7 @@
     <module>mingyue-springboot-admin</module>
     <module>mingyue-springboot-admin-client</module>
 	<module>mingyue-springboot-security</module>
+	<module>mingyue-springboot-event</module>
   </modules>
 
   <build>
