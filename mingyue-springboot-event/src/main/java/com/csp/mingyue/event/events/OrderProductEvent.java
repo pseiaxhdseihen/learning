@@ -1,7 +1,7 @@
 package com.csp.mingyue.event.events;
 
-import java.time.Clock;
 import lombok.Data;
+import lombok.ToString;
 import org.springframework.context.ApplicationEvent;
 
 /**
@@ -10,13 +10,14 @@ import org.springframework.context.ApplicationEvent;
  * @description
  */
 @Data
+@ToString
 public class OrderProductEvent extends ApplicationEvent {
 
   /** 该类型事件携带的信息 */
   private String orderId;
 
-  public OrderProductEvent(Object source, Clock clock, String orderId) {
-    super(source, clock);
+  public OrderProductEvent(Object source, String orderId) {
+    super(source);
     this.orderId = orderId;
   }
 }
