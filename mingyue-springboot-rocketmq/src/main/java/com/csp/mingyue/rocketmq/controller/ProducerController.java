@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 生产消息，消费消息
+ *
  * @author Strive
  * @date 2022/4/24 17:12
  * @description
