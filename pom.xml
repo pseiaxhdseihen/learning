@@ -56,9 +56,10 @@
     <module>mingyue-springboot-websocket</module>
     <module>mingyue-springboot-admin</module>
     <module>mingyue-springboot-admin-client</module>
-	<module>mingyue-springboot-security</module>
-	<module>mingyue-springboot-event</module>
-	<module>mingyue-springboot-rocketmq</module>
+    <module>mingyue-springboot-security</module>
+    <module>mingyue-springboot-event</module>
+    <module>mingyue-springboot-rocketmq</module>
+    <module>mingyue-springboot-minio</module>
   </modules>
 
   <build>
